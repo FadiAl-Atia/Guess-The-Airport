@@ -1,0 +1,57 @@
+.my-name {
+    color: #468BFA;
+    font-weight: bolder;
+}
+
+.text-hue {
+    background: radial-gradient(rgb(0, 38, 255) 0%, rgb(0, 0, 0) 100%) -100px 0 / 100% 200%;
+    background-size: 200% auto;
+    line-height: none;
+    padding: 0 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-animation: shine 3s linear infinite;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.landing {
+    height: 70vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.landing-game {
+    height: 50vh;
+    width: 30vw;
+}
+
+.title {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.country {
+    color: blue;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 3.5rem;
+    }
+}
